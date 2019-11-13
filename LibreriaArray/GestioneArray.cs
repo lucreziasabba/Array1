@@ -6,23 +6,13 @@ namespace LibreriaArray
     {
         public static void LeggiArray(int[] array)
         {
-
+            for (int x = 0; x < array.Length; x++)
+            {
+                Console.WriteLine("Inserisci il valore in posizione "+x);
+                int n = int.Parse(Console.ReadLine());
+                array[x] = n;
+            }
         }
-        public static void StampaArray(int[] array)
-        {
 
-        }
-        public static int[] CopiaArray(int[] array)
-        {
-
-        }
-        public static bool RicercaArray(int[] array, int elemento)
-        {
-
-        }
-        public static bool SonoUguali(int[] array1, int[] array2)
-        {
-
-        }
     }
 }
